@@ -1,0 +1,154 @@
+Question-1
+sum=0
+for i in range(0,21):
+    if(i%2!=0):
+        sum=sum+i
+print(sum)
+
+Question-2
+sum=0
+for i in range(100,201):
+    sum=sum+i
+print(sum)
+
+Question-3
+sum=0
+for i in range(1,11):
+    if(i%2==0):
+        sum=sum+(i*i)
+print(sum)
+    
+Question-4
+l1=[22,4,16,38,13]
+x=1
+print("L I S T   O F  O P E R A T I O N S")
+print(" 1 Append an element\n 2 Insert an element at the desired position\n 3 Append a list to the given list\n 4 Modify an existing element\n 5 Delete an existing element by its position\n 6 Delete an existing element by its value\n 7 Sort the list in ascending order\n 8 Sort the list in descending order\n 9 Display the list\n 10 Exit")
+choice=int(input("Enter your choice\n"))
+
+for i in range(x):
+    
+    if(choice==1):
+        element=int(input("Enter Element to append"))
+        l1.append(element)
+        print(l1)
+        
+    elif(choice==2):
+        position=int(input("Enter the Desired Location"))
+        ele=input("Enter Element")
+        l1.insert(position,ele)
+        print(l1)
+    
+    elif(choice==3):
+        l=[int(i) for i in input("Enter values").split(",")]
+        l1.append(l)
+        print(l1)
+        
+    elif(choice==4):
+        old_element=int(input("Enter Element to position"))
+        new_element=int(input("Enter Element to modify"))
+        l1[old_element]=new_element
+        print(l1)
+     
+
+    elif(choice==5):
+        existing_element=int(input("Enter position to Delete"))
+        l1.pop(existing_element)
+        print(l1)
+     
+      
+    elif(choice==6):
+        value=int(input("Enter value to delete"))
+        l1.remove(value)
+        print(l1)
+     
+  
+    elif(choice==7):
+        print(l1.sort(),"List in ascending order",l1)
+        
+    
+    elif(choice==8):
+        print("List in descending order",l1.sort(reverse=True),l1) 
+        
+    elif(choice==9):
+        print(l1)
+        
+    elif(choice==10):
+        break
+    
+    else:
+        print("Invalid choice")
+
+Question-5
+for i in range(65,91):
+    print(i,":",chr(i))
+
+Question-6
+for i in range(48,58):
+    print(i,":",chr(i))
+
+Question-7
+for i in range(97,123):
+    print(i,":",chr(i))
+
+Question-8
+L1 = [100, 200, 300, 400, 500]
+L1.reverse()
+print(L1)
+
+Question-9
+List1 = [1, 2, 3, 4, 5, 6, 7]
+for items in range(len(List1)):
+    List1[items]=List1[items]**2
+print(List1)
+
+Question-10
+count=0
+s=input("Enter the string")
+vowel={"a":0,"e":0,"i":0,"o":0,"u":0}
+for i in s:
+    if i in vowel:
+        count=count+1
+print(count)    
+
+Question-11
+s=input("Enter the string")
+x=s.split()
+x.sort()
+print(x)
+
+Question-12
+import string
+s="!&quot;#$%&amp;\&#39;()*+,-./:;&lt;=&gt;?@[\\]^_`{|}~"
+
+punch="".join(i for i in s if i not in string.punctuation)
+print(punch)
+
+Question-13
+or i in range(0,3):
+    for j in range(i+1,0,-1):
+        print(j,end=" ")
+    print()
+
+Question-14
+for i in range(1,7):
+    for j in range(i):
+        print("*",end="")
+    print()
+
+Question-15
+for i in range(0,4):
+    for j in range(i+1):
+        print("*",end="")
+    print()
+
+for s in range(4,0,-1):
+    for t in range(s-1):
+        print("*",end="")
+    print()
+
+Question-16
+for i in range(1,11):
+    print(i,"|",end=" ")
+    for j in range(1,11):
+        print(i*j,end=" ")
+    print()
